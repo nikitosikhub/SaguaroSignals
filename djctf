@@ -29,7 +29,7 @@ def extract_flag(root):
 
 def main():
     tree = build_tree()
-    _ = tree.evaluate()  # создаём видимость сложных вычислений
+    _ = tree.evaluate()
     print(extract_flag(tree))
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ const char* get_random_phrase() {
         "Calculating entropy of the universe...",
         "Validating imaginary signatures...",
         "Tracing invisible breadcrumbs...",
-        "djctf{r0ll1ng}"  // отвлекающий элемент
+        "djctf{r0ll1ng}"
     };
     int n = sizeof(phrases) / sizeof(phrases[0]);
     return phrases[rand() % n];
@@ -20,9 +20,8 @@ const char* get_random_phrase() {
 int main() {
     srand((unsigned int)time(NULL));
 
-    // создаём видимость сложных вычислений
     for (int i = 0; i < 1000000; i++) {
-        int x = i * i % 1234567; // бессмысленная нагрузка
+        int x = i * i % 1234567;
         (void)x;
     }
 

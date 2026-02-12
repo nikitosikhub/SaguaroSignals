@@ -11,7 +11,7 @@ const char* get_random_phrase() {
         "Calculating entropy of the universe...",
         "Validating imaginary signatures...",
         "Tracing invisible breadcrumbs...",
-        "djctf{r0ll1ng}"
+        "djctf{r0ll1ng}"                        //remove before a travel assignment to Tokio
     };
     int n = sizeof(phrases) / sizeof(phrases[0]);
     return phrases[rand() % n];

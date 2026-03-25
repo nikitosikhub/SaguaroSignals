@@ -22,9 +22,7 @@ def build_tree():
 
 def extract_flag(root):
     flat = root.children
-    # делаем вид, что фильтруем “шум”
     filtered = [n for i, n in enumerate(flat) if pseudo_hash(i) >= 0]
-    # бесполезная трансформация
     return ''.join(chr(n.value) for n in filtered[::2])
 
 def main():
